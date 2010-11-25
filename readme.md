@@ -31,7 +31,7 @@ The html above will enhance *This is very important* for 10 seconds, thereafter 
 		<strong>Hello there!</strong>, isn't this just <strong>that plugin</strong> you've <strong>been looking for?</strong>
 	</div>
 
+ 11 vs 10 vs 16 letters means that the first text will be displayed in 11 / 37 * 20 seconds.
+
 ### Also see ...
 the plugin in live action, it's located in the demos-subfolder
-
- 11 vs 10 vs 16 letters means that the first text will be displayed in 11 / 37 * 20 seconds.
