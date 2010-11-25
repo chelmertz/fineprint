@@ -1,5 +1,9 @@
 # fineprint
-Add usability to your license agreement or otherwise really, really important stuff.
+fineprint provides a visual spotlight leading the visitor's eyes right through your really long document. Perfect for your license agreement or otherwise really, really important stuff.
+
+No extra HTML is to be added. Of course the page works 100% even without javascript.
+
+You, as a publisher, **can be certain that your audience reads what's most important**.
 
 ## Usage
 	$('#license_agreement').fineprint({
