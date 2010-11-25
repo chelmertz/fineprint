@@ -9,7 +9,6 @@ jQuery.fn.fineprint = function(options) {
 		afterCountdown: function() {},
 		beforeCountdown: function() {},
 		countdown: 30,
-		dataKey: 'fineprintWeight',
 		initialDelay: 5,
 		style: {
 			'backgroundColor': 'black',

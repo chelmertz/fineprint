@@ -5,6 +5,20 @@ No extra HTML is to be added. Of course the page works 100% even without javascr
 
 You, as a publisher, **can be certain that your audience reads what's most important**.
 
+... and it's *very* customizable.
+
+## API
+
+###Options
+Proper defaults are in place, but this is what you can use to customize it for your setting.
+
+	- afterCountdown: function called after the countdown
+	- beforeCountdown: function called before the countdown
+	- countdown: int, number of seconds to highlight each emphasized text. See *Usage*-examples for algorithm
+	- initialDelay: int, seconds until countdown starts (note that the submit-button is disabled on load, before initialDelay
+	- style: object, structure is matching multiple calls to $.css()
+	- temporaryButtonValue: string to place on the submit-button. If `%s` is included, it will be replaced with a countdown timer updated once per second
+
 ## Usage
 	$('#license_agreement').fineprint({
 		'countdown': 20, // How long should the fineprint-enhancement last?
