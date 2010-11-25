@@ -2,11 +2,11 @@
 Add usability to your license agreement or otherwise really, really important stuff.
 
 ## Usage
-$('#license_agreement').fineprint({
-	'countdown': 20, // How long should the fineprint-enhancement last?
-	'initialDelay': 5, // how long should the 
-	'submit': $('#submit'),
-});
+	$('#license_agreement').fineprint({
+		'countdown': 20, // How long should the fineprint-enhancement last?
+		'initialDelay': 5, // how long should the 
+		'submit': $('#submit'),
+	});
 
 Scenario: the #submit-element will be deactivated on page load, every **strong/em** element that is a child element of #license_agreement will be highlighted in order, during 20 seconds (countdown), starting 5 seconds after page load (initialDelay).
 
