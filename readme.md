@@ -36,4 +36,4 @@ The html above will enhance *This is very important* for 10 seconds, thereafter 
 ### Demos
 See the plugin in live action, it's located in the demos-subfolder
 or
-view the **screencast at http://iamnearlythere.tumblr.com/post/1684598613/just-finished-fineprint-which-is-a-jquery-plugin**
+view the **screencast at (http://iamnearlythere.tumblr.com/post/1684598613/just-finished-fineprint-which-is-a-jquery-plugin)**
