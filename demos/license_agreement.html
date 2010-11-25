@@ -24,9 +24,10 @@
 		<script type="text/javascript" src="../jquery.fineprint.js"></script>
 		<script type="text/javascript">
 		$(document).ready(function(){
-			$('#agree').fineprint({
-				text: $('#license'),
-				countdown: 15
+			$('#license').fineprint({
+				countdown: 30,
+				submit: $('#agree'),
+				temporaryButtonValue: 'Read the license (%s seconds left)'
 			});
 		});
 		</script>

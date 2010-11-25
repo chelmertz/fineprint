@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<p>Congratulations, now all you have to do is to <strong>confirm your identity</strong> to really let us know who you are and what-not. Capisce?</p>
+		<p>Oh, and <strong>good luck!</strong> You will need it.</p>
+		<form action="" method="">
+			<input type="submit" id="continue" value="Allright, I'm actually me, can we go on?" />
+		</form>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		<script type="text/javascript" src="../jquery.fineprint.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$('p:first').fineprint({
+				countdown: 5,
+				initialDelay: 10,
+				submit: $('#continue'),
+				temporaryButtonValue: 'Take notice (%s)'
+			});
+		});
+		</script>
+	</body>
+</html>
