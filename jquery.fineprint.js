@@ -4,7 +4,6 @@ jQuery.fn.fineprint = function(options) {
 		return this;
 	}
 
-	// todo: make compatible with jquery-ui's .highlight()
 	var settings = {
 		afterCountdown: function() {},
 		beforeCountdown: function() {},
@@ -28,7 +27,6 @@ jQuery.fn.fineprint = function(options) {
 	
 	// Enable the form again
 	var done = function() {
-		// todo make sure the button is in the viewport (even a bit in).. I think it outweighs the annoyance in scrolling the license away, since the plugin is all about skimming the text anyway
 		submitButton.attr('disabled', '').val(originalButtonText);
 		if(typeof settings.afterCountdown === "function") {
 			settings.afterCountdown();
