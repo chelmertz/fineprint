@@ -33,5 +33,7 @@ The html above will enhance *This is very important* for 10 seconds, thereafter 
 
  11 vs 10 vs 16 letters means that the first text will be displayed in 11 / 37 * 20 seconds.
 
-### Also see ...
-the plugin in live action, it's located in the demos-subfolder
+### Demos
+See the plugin in live action, it's located in the demos-subfolder
+or
+view the **screencast at http://iamnearlythere.tumblr.com/post/1684598613/just-finished-fineprint-which-is-a-jquery-plugin**
