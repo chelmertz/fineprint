@@ -9,6 +9,7 @@ jQuery.fn.fineprint = function(options) {
 		beforeCountdown: function() {},
 		countdown: 30,
 		initialDelay: 5,
+		jqueryUiHighlight: false,
 		style: {
 			'backgroundColor': 'black',
 			'color': '#fff',
@@ -20,6 +21,11 @@ jQuery.fn.fineprint = function(options) {
 	};
 
 	$.extend(settings, options);
+
+	// Feature detect the highlight of jquery ui
+	if(settings.jqueryUiHighlight && !$.isFunction($.fn.effect)) {
+		settings.jqueryUiHighlight = false;
+	}
 
 	var submitButton = options.submit;
 	var originalButtonText = submitButton.val();
@@ -73,24 +79,34 @@ jQuery.fn.fineprint = function(options) {
 			$.each(emphasizingElements, function(index, value) {
 				var current = $(value);
 
+				// The currently emphasized text only last for a calculated amount of time
+				var miliseconds = settings.countdown * (current.text().length/totalCharactercount) * 1000;
+
+				// Apply the filter
 				setTimeout(
 					function() {
-						// Save the original CSS, for a return point
-						for(var key in settings.style) {
-							oldStyle[key] = current.css(key);
-							
-							// Apply the new CSS rule
-							current.css(key, settings.style[key]);
+						if(settings.jqueryUiHighlight) {
+							current.effect('highlight', {}, miliseconds);
+						} else {
+							// Save the original CSS, for a return point
+							for(var key in settings.style) {
+								oldStyle[key] = current.css(key);
+								
+								// Apply the new CSS rule
+								current.css(key, settings.style[key]);
+							}
 						}
 					},
 					totalReservedTime
 				);
 
-				// The currently emphasized text only last for a calculated amount of time
-				var miliseconds = settings.countdown * (current.text().length/totalCharactercount) * 1000;
 				totalReservedTime += parseInt(miliseconds);
+				// Reset the filter
 				setTimeout(
 					function() {
+						if(settings.jqueryUiHighlight) {
+							return;
+						}
 						// Doing the reset dance
 						for(var key in settings.style) {
 							current.css(key, oldStyle[key]);
