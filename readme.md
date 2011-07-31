@@ -7,6 +7,11 @@ You, as a publisher, **can be certain that your audience reads what's most impor
 
 ... and it's *very* customizable.
 
+## Demos
+See the plugin in live action, it's located in the demos-subfolder
+or
+view the **screencast at [http://iamnearlythere.com/fineprint-focus-users-attention-jquery-plugin](http://iamnearlythere.com/fineprint-focus-users-attention-jquery-plugin)**
+
 ## API
 
 ###Options
@@ -47,8 +52,3 @@ The html above will enhance *This is very important* for 10 seconds, thereafter 
 	</div>
 
  11 vs 10 vs 16 letters means that the first text will be displayed in 11 / 37 * 20 seconds.
-
-### Demos
-See the plugin in live action, it's located in the demos-subfolder
-or
-view the **screencast at [http://iamnearlythere.com/fineprint-focus-users-attention-jquery-plugin](http://iamnearlythere.com/fineprint-focus-users-attention-jquery-plugin)**
