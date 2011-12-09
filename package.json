@@ -1,0 +1,26 @@
+{
+	"name": "color",
+	"version": "1.0.0",
+	"title": "fineprint",
+	"author": {
+		"name": "Carl Helmertz",
+		"email": "helmertz@gmail.com",
+		"url": "http://helmertz.com"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "license"
+		}
+	],
+	"dependencies": {
+		"jquery": "1.3"
+	},
+	"homepage": "http://iamnearlythere.com/fineprint-focus-users-attention-jquery-plugin",
+	"keywords": [
+		"form",
+		"ui",
+		"text"
+	],
+	"description": "fineprint is a jquery plugin that let’s the developer direct the user’s attention towards small fragments of your very large document. It’s easily customizable and let’s you drop it on an already functional page, being truly unobtrusive. fineprint adapts to your text and displays the larger text excerpt a little bit longer. It also allows you to customize the CSS of the highlighted text. Plus, it is compatible with jQuery UI’s effect highlight."
+}
